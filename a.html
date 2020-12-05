@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+<body>
+<center><p style="font-size:30px">How tall are you in Levi heights?</p></center>
+<br><br>
+<center><p style="font-size:20px">That is the question.</p><center/>
+<br><br><br>
+ <label for="fname" style="color:black">ENTER YOUR HEIGHT IN CM</label><br>
+    <input id="price">
+    <br><br><br>
+    <button onclick="getPrice()">
+WONDER NO MORE
+</button>
+<br><br><br>
+<label for="fname" style="color:black">YOUR HEIGHT IN LEVI HEIGHTS</label><br>
+    
+    <input readonly id="total">
+    <script>
+        getPrice = function() {
+            var numVal1 = Number(document.getElementById("price").value);
+            var totalValue = numVal1/160
+            document.getElementById("total").value = totalValue,toFixed(2);
+        }
+    </script>
+</body>
+</html>
